@@ -19,11 +19,13 @@ ul{
 }
 li{
     list-style: none;
+    font-family: 'Oxygen', sans-serif;
 }
 span {
+    font-family: 'Oxygen', sans-serif;
     padding: 8px;
-    height: 75px;
-    width: 80px;
+    height: 50px;
+    width: auto;
     background-color: black;
     color: white;
     text-align: center;
@@ -32,8 +34,8 @@ span {
 }
 
 span:hover{
-    height: 90px;
-    width: 94px;
+    height: 70px;
+    width: auto;
     font-size: 25px;
     background-color: rgb(2, 2, 133);
     cursor: pointer;

@@ -15,7 +15,7 @@ const getSalah = async () => {
         const response = await axios.get(`http://api.aladhan.com/v1/calendarByCity?city=Phoenix&country=United%20States&method=2&month=${d.getMonth()+1}&year=${d.getFullYear()}`);
         const salah = response.data.data[currentDay].timings
         console.log(response.data.data[currentDay])
-        monthEl.innerHTML = response.data.data[currentDay].date.hijri.month.en
+        monthEl.textContent = 'Month of '+response.data.data[currentDay].date.hijri.month.en
         arabicEl.innerHTML = response.data.data[currentDay].date.hijri.month.ar
         firstEl.innerHTML = salah.Fajr
         secondEld.innerHTML = salah.Dhuhr
