@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(2, 78, 78);
+    width: auto;
+    height: 100vh;
+}
+
+.times{
+    padding: 100px 0px 0px 100px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+span {
+    padding: 8px;
+    height: 75px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: 500ms ease-in;
+}
+
+span:hover{
+    height: 90px;
+    width: 94px;
+    font-size: 25px;
+    background-color: rgb(2, 2, 133);
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 60px;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+}
