@@ -50,3 +50,20 @@ h2{
     text-align: center;
     font-size: 50px;
 }
+
+@media screen and (max-width: 480px) {
+    .times{
+        padding: 0px;
+        margin-top: 50px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    span{
+        margin: 10px;
+    }
+    h2{
+        margin-top: 5px;
+    }
+}

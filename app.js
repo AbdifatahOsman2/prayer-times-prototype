@@ -6,6 +6,7 @@ const fifthEl = document.querySelector("#fifth")
 const monthEl = document.querySelector("#month")
 const arabicEl = document.querySelector("#arabic")
 
+
 const d = new Date();
 const currentDay = d.getDate()
 console.log(currentDay)
