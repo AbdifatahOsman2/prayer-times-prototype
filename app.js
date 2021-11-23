@@ -24,9 +24,55 @@ const getSalah = async () => {
         fourthEl.innerHTML = salah.Maghrib
         fifthEl.innerHTML = salah.Isha
 
+
+        var time = salah.Fajr
+        time = time.split('');
+        console.log(time)
+        var hours = Number(time[0] + time[1]);
+        console.log(hours)
+        var minutes = Number(time[3] + time[4]);
+        console.log(minutes)
+        var timeValue;
+
+        if (hours > 0 && hours <= 12) {
+            timeValue= "" + hours;
+          } else if (hours > 12) {
+            timeValue= "" + (hours - 12);
+          } else if (hours == 0) {
+            timeValue= "12";
+          }
+          timeValue += (minutes < 10) ? ":0" + minutes : ":" + minutes;  // get minutes
+            timeValue += (hours >= 12) ? " P.M." : " A.M.";  // get AM/PM
+
+          console.log(timeValue)
+
     } catch (error) {
         console.error(error)
     }
 }
 
 getSalah()
+
+// military to standard time converter ...still working
+// const convert = (prayer) => {
+//   var time = prayer
+//   time = time.split('');
+//   var hours = Number(time[0] + time[1]);
+//   console.log("function "+hours)
+//   var minutes = Number(time[3] + time[4]);
+//   console.log("function "+minutes)
+//   var timeValue = "";
+
+//   if (hours > 0 && hours <= 12) {
+//       timeValue= "" + hours;
+      
+//     } else if (hours > 12) {
+//       timeValue= "" + (hours - 12);
+//     } else if (hours == 0) {
+//       timeValue= "12";
+//     }
+//     timeValue += (minutes < 10) ? ":0" + minutes : ":" + minutes;  // get minutes
+//       timeValue += (hours >= 12) ? " P.M." : " A.M.";  // get AM/PM
+// }
+
+// console.log(`this is the func `+convert(salah.Isha))
