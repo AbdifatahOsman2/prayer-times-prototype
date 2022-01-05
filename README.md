@@ -5,7 +5,7 @@
 searchable salah times for muslims
 > this a prototype and is still in the works
 
-To use this clone this repo and run:
+To use, this clone this repo and run:
 ```
 npm i
 ```
