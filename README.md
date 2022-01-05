@@ -5,10 +5,6 @@
 searchable salah times for muslims
 > this a prototype and is still in the works
 
-To use, clone this repo and run:
-```
-npm i
-```
 ## Wireframes
 
 <img src="./Assets/Desktop - 1Pr.png"/>
