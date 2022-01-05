@@ -2,8 +2,13 @@
 
 ## Project Description
 
-searchable salah times for muslims using a Salah Api(a prototype)
+searchable salah times for muslims
+> this a prototype and is still in the works
 
+To use this clone this repo and run:
+```
+npm i
+```
 ## Wireframes
 
 <img src="./Assets/Desktop - 1Pr.png"/>
@@ -11,7 +16,7 @@ searchable salah times for muslims using a Salah Api(a prototype)
 ## API and Data Sample
 
 ### Example Link:
-```https://aladhan.com/prayer-times-api```
+[https://aladhan.com/prayer-times-api]
 
 ```
 {
