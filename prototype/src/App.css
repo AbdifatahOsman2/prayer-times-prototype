@@ -1,0 +1,112 @@
+body{
+  background: #1D2026;
+  color: white;
+}
+
+.Prayer{
+  margin: 200px 0px 0px 150px;
+  /* background-image: url('../images/salahBG.jpg');
+  background-position: center; */
+  width: auto;
+  height: 430px;
+}
+#input{
+  margin: 0px 40px 0px 0px;
+}
+.input-cont{
+  margin: 0px 400px 0px 0px;
+}
+
+.Prayer h5{
+  padding: 20px 0px 0px 650px;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#prayers-container span{
+  display: inline-block;
+  margin: 30px 40px 0px 50px;
+  font-family: 'Oxygen', sans-serif;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  transition: 250ms ease-in;
+  animation: appearTwo 250ms;
+}
+#prayers-container li{
+  margin-top: 55px;
+  font-size: 30px;
+  list-style: none;
+  font-family: 'Oxygen', sans-serif;
+  color: rgb(255, 255, 255);
+  animation: appear 1000ms;
+}
+
+
+@keyframes appear {
+  from{
+    font-size: 0px;
+    opacity: 0;
+  }to{
+    opacity: 1;
+    font-size: 30px;
+  }
+}
+
+@keyframes appearTwo {
+  from{
+    height: 10px;
+    width: 10px;
+    opacity: 0;
+  }to{
+    opacity: 1;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+
+#prayers-container span:hover{
+  border-radius: 25%;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: blueviolet;
+}
+.Prayer p{
+  padding: 40px 0px 0px 240px;
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.Prayer a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  position: relative;
+}
+.Prayer a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1b7ccc;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.Prayer a:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
