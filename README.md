@@ -7,7 +7,7 @@ searchable salah times for muslims
 
 ## Wireframes
 
-<img src="./Assets/Desktop - 1Pr.png"/>
+<img src="./Assets/Salah Prototype.png"/>
 
 ## API and Data Sample
 
