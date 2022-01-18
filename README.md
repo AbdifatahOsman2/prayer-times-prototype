@@ -62,8 +62,3 @@ searchable salah times for muslims
 ```
 
 
-
-#### PostMVP  
-
-- Add second API
-- Update UI
